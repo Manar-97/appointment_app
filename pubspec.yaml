@@ -19,7 +19,7 @@ dependencies:
   freezed_annotation: ^3.1.0
   # For dependency injection
   get_it: ^9.2.1
-  # Annotations for JSON serializable Code Generator
+  # Automatically generate code for converting to and from JSON by annotating Dart classes
   json_annotation: ^4.12.0
   # Networking
   dio: ^5.11.0
@@ -29,8 +29,12 @@ dependencies:
   # Localization
   easy_localization: ^3.0.8
   init: ^1.0.0
-  #for splash screen
+  # For splash screen
   flutter_native_splash: ^2.4.7
+  # An SVG rendering and widget library for Flutter, which allows painting
+  flutter_svg: ^2.3.0
+  # For adapting screen and font size.
+  flutter_screenutil: ^5.9.3
 
 dev_dependencies:
   flutter_test:
@@ -45,9 +49,9 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  #assets:
-  #   - assets/images/
-  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/images/
+    - assets/svgs/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
