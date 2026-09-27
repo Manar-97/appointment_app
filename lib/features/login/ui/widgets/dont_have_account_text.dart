@@ -1,3 +1,5 @@
+import 'package:appointment_app/core/helpers/extentions.dart';
+import 'package:appointment_app/core/routing/routes.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import '../../../../core/theming/styles.dart';
@@ -20,7 +22,7 @@ class DontHaveAccountText extends StatelessWidget {
             style: TextStyles.font13BlueSemiBold,
             recognizer: TapGestureRecognizer()
               ..onTap = () {
-                //context.pushReplacementNamed(Routes.signUpScreen);
+                context.pushReplacementNamed(Routes.signupScreen);
               },
           ),
         ],

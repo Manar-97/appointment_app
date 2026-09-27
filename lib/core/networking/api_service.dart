@@ -1,3 +1,5 @@
+import 'package:appointment_app/features/sign_up/data/model/sign_up_request_body.dart';
+import 'package:appointment_app/features/sign_up/data/model/sign_up_response.dart';
 import 'package:dio/dio.dart';
 import 'package:retrofit/retrofit.dart';
 
@@ -14,8 +16,8 @@ abstract class ApiService {
   @POST(ApiConstants.login)
   Future<LoginResponse> login(@Body() LoginRequestBody loginRequestBody);
 
-  //   @POST(ApiConstants.signup)
-  //   Future<SignupResponse> signup(
-  //       @Body() SignupRequestBody signupRequestBody,
-  //       );
+    @POST(ApiConstants.signup)
+    Future<SignupResponse> signup(
+        @Body() SignupRequestBody signupRequestBody,
+        );
 }

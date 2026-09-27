@@ -1,4 +1,3 @@
-import 'package:appointment_app/features/login/data/model/login_request_body.dart';
 import 'package:appointment_app/features/login/logic/cubit/login_cubit.dart';
 import 'package:appointment_app/features/login/ui/widgets/dont_have_account_text.dart';
 import 'package:appointment_app/features/login/ui/widgets/email_and_password.dart';
@@ -67,12 +66,7 @@ class LoginScreen extends StatelessWidget {
 
   void validateThenDoLogin(BuildContext context) {
     if (context.read<LoginCubit>().formKey.currentState!.validate()) {
-      context.read<LoginCubit>().emitLoginState(
-        LoginRequestBody(
-          email: context.read<LoginCubit>().emailController.text,
-          password: context.read<LoginCubit>().passwordController.text,
-        ),
-      );
+      context.read<LoginCubit>().emitLoginState();
     }
   }
 }
