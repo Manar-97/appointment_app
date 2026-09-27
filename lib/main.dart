@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'core/routing/app_router.dart';
 
 void main() {
+  
   setUpGetIt();
   runApp(DocApp(appRouter: AppRouter()));
 }
